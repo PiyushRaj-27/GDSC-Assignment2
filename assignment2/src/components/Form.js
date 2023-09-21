@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles/Form.css"
 function Form() {
     const [formData, setformData] = useState({ name: "", email: "", isMarried: "single" })
-    const [errorData, setErrorData] = useState("")
+    const [errorData, setErrorData] = useState("") // to show error message to user.
     
     const handleChange = (event) =>{
         const {name, value} = event.target;
