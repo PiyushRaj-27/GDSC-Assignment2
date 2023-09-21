@@ -22,6 +22,7 @@ function Form() {
             }
             else{
                 if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+                    setErrorData("")
                     alert(`Data successfully submitted: Name: ${name}, Email: ${email}, Marraige Status: ${isMarried} `);
                 }
                 else{
